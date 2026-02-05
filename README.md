@@ -47,32 +47,19 @@
 <p align="left">
   <img src="https://skillicons.dev/icons?i=git,bash,linux,py,github&theme=dark" />
 </p>
+
 ### 🏆 My GitHub Trophies
 ![Trophies](https://github-profile-trophy.vercel.app/?username=aballard505&theme=onedark&no-frame=true&column=4)
 
+
+
 ---
-
 ## 🚀 Global System Monitor (Setup Guide)
-Want to see your PC stats like a pro? Follow these steps to get this tool running on any Windows machine.
-
-### 1. Download the Script
-* Download the `sys_check.ps1` file from this repository to your computer.
-
-### 2. How to Run (Choose your Terminal)
-
-#### Option A: Windows PowerShell (Recommended)
+### 1. How to Run (PowerShell)
 1. Open **PowerShell**.
-2. Navigate to your folder: `cd ~/andys-cool-project`
-3. Allow the script to run: 
-   `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`
-4. Launch the script: 
-   `.\sys_check.ps1`
+2. `cd ~/andys-cool-project`
+3. `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`
+4. `.\sys_check.ps1`
 
-#### Option B: Command Prompt (The Shortcut)
-Run this single command to trigger the report:
+### 2. How to Run (Command Prompt)
 `powershell -ExecutionPolicy Bypass -File sys_check.ps1`
-
-### 📋 What this tool shows:
-* **System Report:** PC Name, OS, and CPU.
-* **Battery Health:** Current charge % and life.
-* **Storage Check:** Free GB on your C: drive.

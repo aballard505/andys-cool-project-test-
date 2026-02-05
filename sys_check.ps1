@@ -1,3 +1,7 @@
+Write-Host "===============================================" -ForegroundColor Gray
+Write-Host "REPORT GENERATED: $(Get-Date -Format 'MMMM dd, yyyy | HH:mm:ss')" -ForegroundColor Cyan
+Write-Host "===============================================" -ForegroundColor Gray
+
 # Get System Info
 $os = Get-CimInstance Win32_OperatingSystem
 $cpu = Get-CimInstance Win32_Processor

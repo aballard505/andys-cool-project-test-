@@ -49,7 +49,9 @@
 </p>
 
 ### 🏆 My GitHub Trophies
-[![Trophies](https://github-profile-trophy.vercel.app/?username=aballard505&theme=onedark&no-frame=true&column=4)](https://github.com/ryo-ma/github-profile-trophy)
+<a href="https://github.com/ryo-ma/github-profile-trophy">
+  <img src="https://github-profile-trophy.vercel.app/?username=aballard505&theme=onedark&no-frame=true&column=4" alt="Trophies" />
+</a>
 
 
 
@@ -63,3 +65,4 @@
 
 ### 2. How to Run (Command Prompt)
 `powershell -ExecutionPolicy Bypass -File sys_check.ps1`
+

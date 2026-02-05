@@ -48,11 +48,11 @@
   <img src="https://skillicons.dev/icons?i=git,bash,linux,py,github&theme=dark" />
 </p>
 
-### 🏆 My GitHub Trophies
-<a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=aballard505&theme=onedark&no-frame=true&column=4" alt="Trophies" />
-</a>
 
+### 🏆 My GitHub Trophies
+<p align="left">
+  <img src="https://github-profile-trophy.vercel.app/?username=aballard505&theme=onedark&no-frame=true&column=4&margin-w=15" alt="Trophies" />
+</p>
 
 
 ---

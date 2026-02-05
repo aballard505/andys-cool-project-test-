@@ -55,31 +55,41 @@
 ---
 
 ## 🚀 Global System Monitor (Setup Guide)
-This tool provides a professional-grade hardware diagnostic report in seconds. Follow these steps to deploy it on any Windows machine.
+A lightweight hardware diagnostic tool for Windows environments. Follow these instructions to get a full system report in seconds.
 
-### 📥 1. Installation
-* Download `sys_check.ps1` to a folder of your choice (e.g., `Documents` or `Desktop`).
-* **Shortcut:** If you have Git installed, just clone this repo:
-  `git clone https://github.com/aballard505/andys-cool-project-test-`
+### 📥 1. Getting the Script
+* **Download:** Save `sys_check.ps1` to your computer.
+* **Pro Tip:** Keep it in a dedicated folder like `C:\Scripts\SystemCheck` for easy access.
 
 ### 💻 2. Execution Methods
 
-#### Option A: The PowerShell Way (Detailed Report)
-1. Search for **PowerShell** in your Start Menu, right-click it, and select **Run as Administrator**.
-2. Navigate to your folder: 
-   `cd "C:\Path\To\Your\Folder"`
-3. **Unblock the Script:** Windows blocks scripts by default for security. Run this to allow it for just this session:
-   `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`
-4. **Launch:** `.\sys_check.ps1`
+| Method | Best For | Security Step Required? |
+| :--- | :--- | :--- |
+| **PowerShell** | Full Administrative Reports | Yes (`Bypass` command) |
+| **Command Prompt** | Quick "One-Liner" checks | No (Uses internal flag) |
 
-#### Option B: The Command Prompt "One-Liner"
-If you prefer **CMD**, you don't need to change security settings manually. Just `cd` into the folder and run:
-`powershell -ExecutionPolicy Bypass -File sys_check.ps1`
+#### ✅ Method A: PowerShell (Standard)
+1. Open the **Start Menu**, type `PowerShell`, and click **Run as Administrator**.
+2. Navigate to your folder: `cd "~/andys-cool-project"`
+3. Run this to unlock the script:
+   `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`
+4. Launch: `.\sys_check.ps1`
+
+#### ✅ Method B: Command Prompt (The Shortcut)
+1. Open **CMD**.
+2. Navigate to your folder: `cd andys-cool-project`
+3. Paste this and hit Enter:
+   `powershell -ExecutionPolicy Bypass -File sys_check.ps1`
 
 ---
 
-### ❓ Troubleshooting (FAQ)
-* **"File not found":** Ensure you are in the correct folder using the `ls` (PowerShell) or `dir` (CMD) command to see your files.
-* **"UnauthorizedAccess":** Make sure you ran the `Set-ExecutionPolicy` command mentioned in Option A.
-* **Red Text in Terminal:** Don't panic! Usually, it means the path to the file is typed incorrectly. Double-check your folder name!
+### 📊 3. Understanding the Report
+* **System Info:** CPU Model (Ryzen 7) and OS build.
+* **Battery Health:** Current charge % and status.
+* **Storage Check:** Remaining space on your primary drive.
+
+### ⚠️ Troubleshooting
+* **"File not found":** Type `dir` to see if the file is in your current folder.
+* **"Access Denied":** Ensure you opened the terminal as **Administrator**.
+
 

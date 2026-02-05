@@ -29,3 +29,23 @@ $freeGB = [Math]::Round($disk.FreeSpace / 1GB, 2)
 $totalGB = [Math]::Round($disk.Size / 1GB, 2)
 Write-Host "Free Space: $freeGB GB / $totalGB GB"
 Write-Host "-----------------------"
+
+Write-Host "`n--- NETWORK HEALTH ---" -ForegroundColor Yellow
+
+# 1. Check Local IP
+$localIP = (Get-NetIPAddress -AddressFamily IPv4 | Where-Object { $_.InterfaceAlias -notlike "*Loopback*" }).IPAddress[0]
+Write-Host "Local IP Address: $localIP"
+
+# 2. Test Connection to Google (Ping)
+Write-Host "Testing Internet Connection..." -NoNewline
+if (Test-Connection -ComputerName google.com -Count 1 -Quiet) {
+    Write-Host " [ONLINE]" -ForegroundColor Green
+} else {
+    Write-Host " [OFFLINE]" -ForegroundColor Red
+}
+
+# 3. Check WiFi Name (SSID)
+$wifi = (netsh wlan show interfaces | Select-String "SSID" | Select-Object -First 1).ToString().Split(":")[1].Trim()
+if ($wifi) { Write-Host "Connected to: $wifi" }
+
+

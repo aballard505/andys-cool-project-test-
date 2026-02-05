@@ -16,3 +16,20 @@
 ## 📂 Table of Contents
 * [Security Lab](#-security-lab)
 * [Project Progress](#-project-dashboard)
+
+## 🛠️ Tech Stack
+| Tool | Category | Level |
+| :--- | :--- | :--- |
+| ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) | Version Control | ⭐⭐⭐⭐⭐ |
+| ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) | Repository Hosting | ⭐⭐⭐⭐ |
+| ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white) | Scripting / CLI | ⭐⭐⭐⭐ |
+| ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black) | Operating System | ⭐⭐⭐ |
+
+
+## 📜 System Logs
+```bash
+[SYSTEM]: Initializing andys-cool-project-test-
+[STATUS]: Dashboard Visuals Online
+[SECURE]: MIT License Verified
+[UPDATE]: Tech Stack Grid Added
+```

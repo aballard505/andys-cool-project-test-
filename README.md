@@ -33,3 +33,13 @@
 [SECURE]: MIT License Verified
 [UPDATE]: Tech Stack Grid Added
 ```
+
+## 🧠 My Git Cheat Sheet
+| Command | What it does |
+| :--- | :--- |
+| `git add .` | Stages all my new changes |
+| `git commit -m "..."` | Saves my changes with a note |
+| `git push` | Sends my work to GitHub |
+| `cd ..` | Moves me "backwards" out of a folder |
+| `ls` | Shows me a list of my files |
+

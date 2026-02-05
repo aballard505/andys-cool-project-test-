@@ -53,13 +53,33 @@
 ![Trophies](https://github-profile-trophy.vercel.app/?username=aballard505&theme=dark&no-frame=false&margin-w=20)
 
 ---
-## 🚀 Global System Monitor (Setup Guide)
-### 1. How to Run (PowerShell)
-1. Open **PowerShell**.
-2. `cd ~/andys-cool-project`
-3. `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`
-4. `.\sys_check.ps1`
 
-### 2. How to Run (Command Prompt)
+## 🚀 Global System Monitor (Setup Guide)
+This tool provides a professional-grade hardware diagnostic report in seconds. Follow these steps to deploy it on any Windows machine.
+
+### 📥 1. Installation
+* Download `sys_check.ps1` to a folder of your choice (e.g., `Documents` or `Desktop`).
+* **Shortcut:** If you have Git installed, just clone this repo:
+  `git clone https://github.com/aballard505/andys-cool-project-test-`
+
+### 💻 2. Execution Methods
+
+#### Option A: The PowerShell Way (Detailed Report)
+1. Search for **PowerShell** in your Start Menu, right-click it, and select **Run as Administrator**.
+2. Navigate to your folder: 
+   `cd "C:\Path\To\Your\Folder"`
+3. **Unblock the Script:** Windows blocks scripts by default for security. Run this to allow it for just this session:
+   `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`
+4. **Launch:** `.\sys_check.ps1`
+
+#### Option B: The Command Prompt "One-Liner"
+If you prefer **CMD**, you don't need to change security settings manually. Just `cd` into the folder and run:
 `powershell -ExecutionPolicy Bypass -File sys_check.ps1`
+
+---
+
+### ❓ Troubleshooting (FAQ)
+* **"File not found":** Ensure you are in the correct folder using the `ls` (PowerShell) or `dir` (CMD) command to see your files.
+* **"UnauthorizedAccess":** Make sure you ran the `Set-ExecutionPolicy` command mentioned in Option A.
+* **Red Text in Terminal:** Don't panic! Usually, it means the path to the file is typed incorrectly. Double-check your folder name!
 

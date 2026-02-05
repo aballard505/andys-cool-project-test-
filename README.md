@@ -58,7 +58,8 @@
 A lightweight hardware diagnostic tool for Windows environments. Follow these instructions to get a full system report in seconds.
 
 ### 📥 1. Getting the Script
-* **Download:** Save `sys_check.ps1` to your computer.
+* **[🚀 Click Here to Download sys_check.ps1](https://raw.githubusercontent.com/aballard505/andys-cool-project-test-/main/sys_check.ps1)**
+  *(Right-click the link and select "Save link as..." to download the file directly to your PC)*
 * **Pro Tip:** Keep it in a dedicated folder like `C:\Scripts\SystemCheck` for easy access.
 
 ### 💻 2. Execution Methods

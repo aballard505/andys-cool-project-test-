@@ -50,10 +50,7 @@
 
 
 ### 🏆 My GitHub Trophies
-<p align="left">
-  <img src="https://github-profile-trophy.vercel.app/?username=aballard505&theme=onedark&no-frame=true&column=4&margin-w=15" alt="Trophies" />
-</p>
-
+![Trophies](https://github-profile-trophy.vercel.app/?username=aballard505&theme=dark&no-frame=false&margin-w=20)
 
 ---
 ## 🚀 Global System Monitor (Setup Guide)

@@ -48,4 +48,28 @@ if (Test-Connection -ComputerName google.com -Count 1 -Quiet) {
 $wifi = (netsh wlan show interfaces | Select-String "SSID" | Select-Object -First 1).ToString().Split(":")[1].Trim()
 if ($wifi) { Write-Host "Connected to: $wifi" }
 
+Write-Host "`n--- SECURITY STATUS ---" -ForegroundColor Cyan
+$fw = Get-NetFirewallProfile -PolicyStore ActiveStore | Select-Object Name, Enabled
+foreach ($profile in $fw) {
+    $status = if ($profile.Enabled) { "ON" } else { "OFF" }
+    $color = if ($profile.Enabled) { "Green" } else { "Red" }
+    Write-Host "$($profile.Name) Firewall: " -NoNewline
+    Write-Host $status -ForegroundColor $color
+}
+
+
+$bootTime = (Get-CimInstance Win32_OperatingSystem).LastBootUpTime
+Write-Host "System Last Booted: " -NoNewline
+Write-Host $bootTime -ForegroundColor Magenta
+
+Write-Host "`n--- STARTUP PROGRAMS ---" -ForegroundColor Yellow
+Get-CimInstance Win32_StartupCommand | Select-Object Name, Command | ForEach-Object {
+    Write-Host ">> $($_.Name)" -ForegroundColor Gray
+}
+
+
+
+
+
+
 

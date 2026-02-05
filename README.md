@@ -43,3 +43,7 @@
 | `cd ..` | Moves me "backwards" out of a folder |
 | `ls` | Shows me a list of my files |
 
+## 🚀 Learning Path
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=git,bash,linux,py,github&theme=dark" />
+</p>

@@ -49,7 +49,9 @@
 </p>
 
 ### 🏆 My GitHub Trophies
-![Trophies](https://github-profile-trophy.vercel.app/?username=aballard505&theme=onedark&no-frame=true&column=4)
+<p align="left">
+  <img src="https://github-profile-trophy.vercel.app/?username=aballard505&theme=onedark&no-frame=true&column=4" />
+</p>
 
 
 
